@@ -1,0 +1,71 @@
+.Discount {
+    &__heading {
+        margin: 30px 0;
+
+        &-left {
+            i {
+                color: #e94560;
+                margin-right: 10px;
+                font-size: 24px;
+            }
+        }
+
+        &-right {
+            cursor: pointer;
+
+            span {
+                margin-right: 8px;
+                color: rgb(125, 135, 156);
+                font-size: 14px;
+                user-select: none;
+            }
+
+            i {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.Discountcard {
+    &__item {
+        &-product {
+            position: relative;
+            background-color: #fff;
+            margin: 0px 10px;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
+            cursor: pointer;
+
+            &__image {
+                position: relative;
+                img {
+                    width: 100%;
+                }
+                &::after {
+                    position: absolute;
+                    content: " ";
+                    inset: 0px;
+                    z-index: 1;
+                    transition: all 250ms ease-in-out 0s;
+                    border-radius: 8px;
+                }
+
+                &:hover::after {
+                    background: rgba(0, 0, 0, 0.3)
+                }
+            }
+            &__name{
+                font-weight: 600;
+                font-size: 14px;
+                margin-top: 8px;
+            }
+            &__price{
+                font-weight: 600;
+                font-size: 14px;
+                color: #e94560;
+            }
+        }
+    }
+}

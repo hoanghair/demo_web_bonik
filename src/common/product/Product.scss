@@ -1,0 +1,115 @@
+.Product {
+    &__detail {
+        width: 50%;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+
+        img {
+            width: 300px;
+            height: 300px;
+        }
+
+        &-list {
+            img {
+                width: 40px;
+                height: 40px;
+            }
+
+            &__item {
+                cursor: pointer;
+                width: 70px;
+                height: 70px;
+                background-color: #fff;
+                border-radius: 10px;
+                border: 1px solid rgb(218, 225, 231);
+                margin-right: 10px;
+            }
+        }
+    }
+
+    &__other {
+        width: 50%;
+        padding: 40px;
+
+        &-title {
+            font-size: 30px;
+            margin-bottom: 16px;
+        }
+
+        &-brand {
+            margin-bottom: 16px;
+
+            span {
+                font-size: 14px;
+                color: rgb(125, 135, 156);
+            }
+
+            h6 {
+                font-size: 14px;
+                font-weight: 600;
+                margin-left: 8px;
+            }
+        }
+
+        &-rated {
+            margin-bottom: 16px;
+
+            span {
+                font-size: 14px;
+                color: rgb(125, 135, 156);
+                margin-right: 8px;
+            }
+
+            h6 {
+                font-size: 14px;
+                font-weight: 600;
+                margin-left: 8px;
+            }
+
+            i {
+                color: #FFCD4E;
+            }
+        }
+
+        &-price {
+            color: #E94560;
+            font-size: 25px;
+            margin-bottom: 16px;
+        }
+
+        &-btn {
+            cursor: pointer;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: rgb(233, 69, 96);
+            font-size: 14px;
+            border-radius: 5px;
+            font-weight: 600;
+
+        }
+
+        &-detail {
+            margin-bottom: 16px;
+            color: rgb(125, 135, 156);
+            font-size: 16px;
+        }
+    }
+
+    &__realted {
+        margin-bottom: 50px;
+        border-top: 1px solid rgb(218, 225, 231);
+
+        h2 {
+            margin: 30px 0px;
+            font-weight: 400;
+        }
+    }
+
+}
+
+.active3 {
+    border: 1px solid rgb(151, 97, 97);
+}

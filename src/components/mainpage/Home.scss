@@ -1,0 +1,89 @@
+
+.Home{
+    background-color: #fff;
+    padding-bottom: 30px;
+}
+
+
+
+//_____________Categories__________
+.Categories{
+    width: 23%;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.08); 
+    padding: 15px 0;
+    border-radius: 5px;
+    margin-top: 5px;
+    &__image{
+        cursor: pointer;
+        transition: 0.5s;
+        height: 40px;
+        
+        &-img{
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+            margin: 0px 10px;
+        }
+        &:hover{
+            background-color: #ffe1ef;
+            color: #e7657b;
+        }
+
+    }
+}
+//____________Slider___________
+.Slider{
+    width: 77%;
+    padding: 16px 0px 16px 32px;
+    & ul{
+        position: relative;
+    }
+    & li {
+        border: 2px solid #b8b7b7;
+        border-radius: 50%;
+        padding: 10px;
+    }
+}
+.slick-arrow{
+    display: none !important;
+}
+//___________SlideCard___________
+.SlideCard{
+    display: flex !important;
+    padding: 0px 10px;
+    &__left{
+        width: 70%;
+        & h1{
+            font-size: 45px;
+        }
+        & p{
+            margin: 20px 0;
+        }
+        &-btn{
+            background-color: #e94560;
+            padding: 12px 40px;
+            font-weight: 700;
+            color: #fff;
+            cursor: pointer;
+            &:hover{
+                background-color: #e7657b;
+                transition: 0.5s ;
+            }
+        }
+    }
+    &__right{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        &-img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+.slick-dots li button:before{
+    font-size: 16px;
+    top: 1px;
+    color: transparent;
+}
