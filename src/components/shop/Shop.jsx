@@ -4,7 +4,7 @@ import Category from "./Category";
 import ShopCart from "./ShopCart";
 import "./Shop.scss";
 
-const Shop = ({ shopItems, addToCart }) => {
+const Shop = () => {
   return (
     <>
       <section className="Shop">
@@ -24,7 +24,7 @@ const Shop = ({ shopItems, addToCart }) => {
               </div>
             </div>
             <div className="wrapper">
-              <ShopCart shopItems={shopItems} addToCart={addToCart} />
+              <ShopCart  />
             </div>
           </div>
         </div>

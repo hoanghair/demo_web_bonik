@@ -1,21 +1,18 @@
 import React, { useEffect } from "react";
+import { useContext } from "react";
 import { useParams } from "react-router-dom";
+import { Context } from "../../App";
 
 import FlashCard from "../../components/flashDeals/FlashCard";
 import "./Product.scss";
 
-const Product = ({
-  productItems,
-  addToCart,
-  shopItems,
-  newArrivals,
-  discountItems,
-}) => {
-  
+const Product = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  const { productItems, addToCart, shopItems, newArrivals, discountItems } =
+    useContext(Context);
   const { id } = useParams();
   const list = [
     ...productItems,
@@ -23,7 +20,9 @@ const Product = ({
     ...newArrivals,
     ...discountItems,
   ];
+  
   const data = list.find((e) => e.id.toString() === id);
+
 
   return (
     <section className="Product">
@@ -58,7 +57,7 @@ const Product = ({
         </div>
         <div className="Product__realted">
           <h2>Realted Products</h2>
-          <FlashCard productItems={productItems} addToCart={addToCart} />
+          <FlashCard />
         </div>
       </div>
     </section>

@@ -3,7 +3,7 @@ import Cart from "./NewCart";
 
 import './NewArrivals.scss'
 
-const NewArrivals = ({newArrivals}) => {
+const NewArrivals = () => {
   return (
     <section className="NewArrivals">
       <div className="container">
@@ -17,7 +17,7 @@ const NewArrivals = ({newArrivals}) => {
             <i class="fa-solid fa-caret-right"></i>
           </div>
         </div>
-        <Cart newArrivals={newArrivals} />
+        <Cart />
       </div>
     </section>
   );

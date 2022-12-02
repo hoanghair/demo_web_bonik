@@ -1,7 +1,13 @@
 import React from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { Context } from '../../App'
 
-const NewCart = ({ newArrivals }) => {
+
+const NewCart = () => {
+  const {newArrivals} = useContext(Context)
+
+
   return (
     <div className="NewCart">
       {newArrivals.map((value) => {

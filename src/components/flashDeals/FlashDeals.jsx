@@ -4,7 +4,7 @@ import React from "react";
 import FlashCard from "./FlashCard";
 import "./FlashDeals.scss";
 
-const FlashDeals = ({ productItems, addToCart }) => {
+const FlashDeals = () => {
   return (
     <section className="FlashDeals">
       <div className="container">
@@ -19,7 +19,7 @@ const FlashDeals = ({ productItems, addToCart }) => {
           </div>
         </div>
 
-        <FlashCard productItems={productItems} addToCart={addToCart} />
+        <FlashCard />
       </div>
     </section>
   );

@@ -9,26 +9,19 @@ import Shop from "../components/shop/Shop";
 import TopCate from "../components/top/TopCate";
 import Wrapper from "../components/wrapper/Wrapper";
 
-const Pages = ({
-  productItems,
-  cartItem,
-  addToCart,
-  shopItems,
-  newArrivals,
-  discountItems,
-}) => {
+const Pages = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <>
-      <Home cartItem={cartItem} />
-      <FlashDeals productItems={productItems} addToCart={addToCart} />
+      <Home />
+      <FlashDeals />
       <TopCate />
-      <NewArrivals newArrivals={newArrivals} />
-      <Discount discountItems={discountItems} />
-      <Shop shopItems={shopItems} addToCart={addToCart} />
+      <NewArrivals />
+      <Discount />
+      <Shop />
       <Annocument />
       <Wrapper />
     </>

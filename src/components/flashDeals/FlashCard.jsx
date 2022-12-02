@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
+import { Context } from '../../App'
 
 const NextArrow = (props) => {
   const { onClick } = props;
@@ -26,7 +27,10 @@ const PrevArrow = (props) => {
   );
 };
 
-const FlashCard = ({ productItems, addToCart }) => {
+const FlashCard = () => {
+
+  const {productItems, addToCart} = useContext(Context)
+  
   const [count, setCount] = useState(0);
   const handleLike = () => {
     setCount(count + 1);

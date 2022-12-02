@@ -2,7 +2,7 @@ import React from "react";
 import Discountcard from "./Discountcard";
 import "./Discount.scss";
 
-const Discount = ({discountItems}) => {
+const Discount = () => {
   return (
     <section className="Discount">
       <div className="container">
@@ -16,7 +16,7 @@ const Discount = ({discountItems}) => {
             <i class="fa-solid fa-caret-right"></i>
           </div>
         </div>
-        <Discountcard discountItems={discountItems} />
+        <Discountcard  />
       </div>
     </section>
   );

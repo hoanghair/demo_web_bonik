@@ -1,9 +1,13 @@
 import React from "react";
+import { useContext } from "react";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Context } from "../../App";
 import "./Cart.scss";
 
-const Cart = ({ cartItem, addToCart, decreaseQty, removecart, }) => {
+const Cart = () => {
+
+  const { cartItem, addToCart, decreaseQty, removecart} = useContext(Context)
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -13,7 +17,7 @@ const Cart = ({ cartItem, addToCart, decreaseQty, removecart, }) => {
     (price, item) => price + item.qty * item.price,
     0
   );
-  console.log(cartItem)
+ 
   return (
     <div className="Cart">
       <div className="container d_flex">

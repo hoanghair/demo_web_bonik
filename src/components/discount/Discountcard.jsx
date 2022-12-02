@@ -3,6 +3,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { Context } from "../../App";
+
 
 const NextArrow = (props) => {
   const { onClick } = props;
@@ -24,7 +27,11 @@ const PrevArrow = (props) => {
     </div>
   );
 };
-const Discountcard = ({ discountItems }) => {
+const Discountcard = () => {
+
+  const {discountItems} = useContext(Context)
+ 
+
   const settings = {
     dots: false,
     infinite: true,

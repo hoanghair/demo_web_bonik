@@ -1,7 +1,12 @@
 import React, { useState } from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { Context } from "../../App";
 
-const ShopCart = ({ shopItems, addToCart }) => {
+const ShopCart = () => {
+  const { shopItems, addToCart } = useContext(Context);
+
+  
   const [count, setCount] = useState(0);
   const handleLike = () => {
     setCount(count + 1);
